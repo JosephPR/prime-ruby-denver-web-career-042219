@@ -1,7 +1,5 @@
-def prime?(num)
-
+def prime?(number)
+  return false if number <= 1
+  (2..Math.sqrt(number)).each { |i| return false if number % i == 0}
+  true
 end
-  # (2..num - 1).each do |n|
-  #   return false if num % n == 0
-  # end
-  # true
